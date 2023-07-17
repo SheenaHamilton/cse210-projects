@@ -11,16 +11,16 @@ public class Running:Activity
 
     public override double DistanceKM()
     {
-        return 0;
+         return (Convert.ToDouble(_distanceMeters)/1000);
     }
 
     public override double SpeedKMH()
     {
-        return 0;
+        return (((Convert.ToDouble(_distanceMeters) / GetMinutesAsDbl()) * 60 )/1000);
     }
 
     public override double PaceKM()
     {
-        return 0;
+        return (60 /SpeedKMH());
     }
 }

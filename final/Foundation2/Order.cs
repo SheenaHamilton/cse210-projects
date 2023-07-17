@@ -1,12 +1,7 @@
 public class Order
 {
-    Customer _customer;
-    List<Product> _orderProducts = new List<Product>();
-
-    public Order()
-    {
-
-    }
+    private Customer _customer;
+    private List<Product> _orderProducts = new List<Product>();
 
     public void AddCustomer(string name, string street, string city, string state, string country, string postal)
     {

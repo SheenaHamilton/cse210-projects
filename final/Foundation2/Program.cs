@@ -34,7 +34,7 @@ class Program
             Console.WriteLine($"\n\n-- SHIPPING LABEL --\n");
             Console.WriteLine(ord.GetShippingLabel());
 
-            Console.WriteLine($"\n\n-- TOTAL ORDER COST --");
+            Console.WriteLine($"\n\n-- TOTAL ORDER COST --\n");
             Console.WriteLine(ord.CalculateTotalCost().ToString("C"));
         }
 

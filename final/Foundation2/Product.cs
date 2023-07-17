@@ -24,9 +24,9 @@
     }
     public double GetTotalPrice()
     {
-        return _price * _quantity;
+        return _price * Convert.ToDouble(_quantity);
     }
-    public double GetQuantity()
+    public int GetQuantity()
     {
         return  _quantity;
     }

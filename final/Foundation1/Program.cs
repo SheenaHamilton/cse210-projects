@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        List<Video> videos = new List<Video>();
 
         Video video1 = new Video( "How to learn Javascript in 90 days",  "Jessica Raymond",  20);
         video1.AddComment("Eric Anderson", "Awesome! I've been looking everywhere for where to start. I found this video informative on where to begin my JavaScript journey! Thanks!");
@@ -29,12 +30,14 @@ class Program
         video4.AddComment("Nicola Ashen", "Totally watching these with my kids this summer, great list, all family friendly, love it!");
         video4.AddComment("Amy Heamer", "Watched these with my friends, great list!");
 
+        videos.Add(video1);
+        videos.Add(video2);
+        videos.Add(video3);
+        videos.Add(video4);
+
         Console.Clear();
 
-        video1.DisplayVideoInformation();
-        video2.DisplayVideoInformation();
-        video3.DisplayVideoInformation();
-        video4.DisplayVideoInformation();
+        videos.ForEach(video => { video.DisplayVideoInformation();});
     }
 
 }

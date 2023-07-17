@@ -10,14 +10,14 @@ public class Lecture:Event
         _speaker = speaker;
         _capacity = capacity;
     }
-    
-    public void DisplayFullDetails()
-    {
 
-    }
-    public void DisplayShortDetails()
+    public string FullDetails()
     {
-
+        return ($"Event: Lecture \n{StandardDetails()}\nSpeaker: {_speaker}\nEvent Capacity: {_capacity}");
     }
 
+    public string ShortDetails()
+    {
+        return ($"Event: Lecture\n{BasicInfo()}");
+    }
 }

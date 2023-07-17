@@ -26,7 +26,7 @@ public class Address
 
     public string GetFormattedAddress()
     {
-        return $"{_place}\n{_street}\n{_city}, {_state}\n{_country}  {_postalCode}";
+        return $"{_place}, {_street}, {_city}, {_state}, {_country}  {_postalCode}";
     }
 
 }

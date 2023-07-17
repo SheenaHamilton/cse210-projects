@@ -8,13 +8,14 @@ public class Outdoor:Event
     {
         _weatherStatement = weather;
     }
-    public void DisplayFullDetails()
+    public string FullDetails()
     {
-
+        return ($"Event: Outdoors \n{StandardDetails()}\nWeather Statement: {_weatherStatement}");
     }
-    public void DisplayShortDetails()
-    {
 
+    public string ShortDetails()
+    {
+        return ($"Event: Outdoors\n{BasicInfo()}");
     }
 
 }

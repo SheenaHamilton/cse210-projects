@@ -11,16 +11,16 @@ public class Swimming:Activity
 
     public override double DistanceKM()
     {
-        return 0;
+        return ((Convert.ToDouble(_laps) * 50) / 1000);
     }
 
     public override double SpeedKMH()
     {
-        return 0;
+        return (DistanceKM()/ (GetMinutesAsDbl()/60));
     }
 
     public override double PaceKM()
     {
-        return 0;
+        return (60 /SpeedKMH());
     }
 }

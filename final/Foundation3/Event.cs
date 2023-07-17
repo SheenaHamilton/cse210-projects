@@ -32,9 +32,13 @@ public class Event
     {
         return  _date.ToShortTimeString().ToString();
     }
-    public void DisplayStandardMessage()
+    public string StandardDetails()
     {
-        Console.WriteLine($"{_title}\n{_description}\n{_date.ToString("dddd, MMMM dd, yyyy")} at {GetTime()}\n{_address.GetFormattedAddress()}");
+        return ($"{_title}\n{_description}\n{_date.ToString("dddd, MMMM dd, yyyy")} at {GetTime()}\n{_address.GetFormattedAddress()}");
+    }
+    public string BasicInfo()
+    {
+        return ($"{_title}\n{_date.ToString("dddd, MMMM dd, yyyy")}");
     }
 
 }

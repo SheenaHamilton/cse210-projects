@@ -11,16 +11,16 @@ public class Cycling:Activity
 
     public override double DistanceKM()
     {
-        return 0;
+        return ((_speedKMH/ 60) * GetMinutesAsDbl());
     }
 
     public override double SpeedKMH()
     {
-        return 0;
+        return _speedKMH;
     }
 
     public override double PaceKM()
     {
-        return 0;
+        return (60 / _speedKMH);
     }
 }

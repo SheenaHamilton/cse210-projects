@@ -10,13 +10,16 @@ public class Reception:Event
         _rsvpDate = date;
         _rsvpEmail = rsvpEmail;
     }
-    public void DisplayFullDetails()
-    {
 
-    }
-    public void DisplayShortDetails()
+    public string FullDetails()
     {
-
+        return ($"Event: Reception \n{StandardDetails()}\nRSVP By: {_rsvpDate.ToString("dddd, MMMM dd, yyyy")} to {_rsvpEmail}");
     }
+
+    public string ShortDetails()
+    {
+        return ($"Event: Reception\n{BasicInfo()}");
+    }
+    
 
 }
